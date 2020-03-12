@@ -19,7 +19,7 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "psr/container": "~1.0",
-        "jz/jz-helper": "dev-master"
+        "jz/jz-helper": "1.0.*-dev"
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.6",
