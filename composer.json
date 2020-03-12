@@ -18,8 +18,7 @@
         "php": ">=7.1.0",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "psr/container": "~1.0",
-        "jz/jz-helper": "1.0.1.*-dev"
+        "psr/container": "~1.0"
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.6",
