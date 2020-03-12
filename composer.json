@@ -1,0 +1,45 @@
+{
+    "name": "topjz/framework",
+    "description": "The Topjz Framework.",
+    "keywords": [
+        "framework",
+        "topjz",
+        "ORM"
+    ],
+    "homepage": "http://topjz.com/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "chen3jian",
+            "email": "chen3jian@vip.qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "psr/container": "~1.0"
+
+    },
+    "require-dev": {
+        "mikey179/vfsstream": "^1.6",
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "files": [],
+        "psr-4": {
+            "jz\\": "src/jz/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "jz\\tests\\": "src/tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
