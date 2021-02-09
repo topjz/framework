@@ -85,6 +85,7 @@ class App extends Container
 
         echo "6、设置当前容器的实例<br>";
         static::setInstance($this);
+        $this->showVarDump($this);
         echo "7、设置当前容器的实例结束<br>";
 
         echo "8、绑定一个应用对象（App类）实例到容器<br>";
@@ -94,6 +95,16 @@ class App extends Container
         echo "10、绑定另一个应用对象（Container类）实例到容器容器<br>";
         $this->instance('jz\Container', $this);
         echo "11、绑定另一个类实例到容器结束<br><br>";
+    }
+
+    /**
+     * 打印数据
+     * @access public
+     * @param mixed $data 需要打印的数据
+     * @since：v1.0
+     */
+    public function showVarDump($data){
+        highlight_string("<?php\n\$data =\n" . var_export($data, true) . ";\n?>");
     }
 
     /**
